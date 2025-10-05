@@ -26,10 +26,7 @@ const Products = ({ products, onAddToCart }) => {
     <section id="products" className="py-5">
       <div className="container">
         <div className="row">
-          <div className="col-lg-12 text-center mb-5">
-            <h2 className="display-5 fw-bold">Our Products</h2>
-            <p className="lead">High-quality construction aggregates for all your building needs</p>
-          </div>
+          {/* Removed repeated 'Our Products' and description text */}
         </div>
         
         <div className="row">
