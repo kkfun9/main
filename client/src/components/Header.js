@@ -5,7 +5,7 @@ const Header = ({ cartCount }) => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
         <a className="navbar-brand" href="#home">
-          <i className="fas fa-building me-2"></i>
+          <img src="/Tiruchendur Murugan Images Hd 4k.jpeg" alt="Murugan" style={{height: '32px', width: '32px', objectFit: 'cover', marginRight: '8px', borderRadius: '50%'}} />
           Velmurugan Stone Crushers
         </a>
         

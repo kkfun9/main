@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="row">
           <div className="col-lg-4 mb-4">
             <h5>
-              <i className="fas fa-building me-2"></i>
+              <img src="/Tiruchendur Murugan Images Hd 4k.jpeg" alt="Murugan" style={{height: '32px', width: '32px', objectFit: 'cover', marginRight: '8px', borderRadius: '50%'}} />
               Velmurugan Stone Crushers
             </h5>
             <p className="mb-3">
