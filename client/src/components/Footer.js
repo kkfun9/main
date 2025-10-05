@@ -63,7 +63,7 @@ const Footer = () => {
               </li>
               <li className="mb-2">
                 <i className="fas fa-map-marker-alt me-2"></i>
-                Your Business Address
+                188 A.Kothur Road Satrawada<br />Nagari (M) Chittoor (D) AP 517590
               </li>
             </ul>
           </div>
