@@ -78,7 +78,7 @@ const ContactForm = () => {
                     <div className="text-center">
                       <i className="fas fa-map-marker-alt fa-3x text-primary mb-3"></i>
                       <h5>Address</h5>
-                      <p className="text-muted">Your Business Address<br>City, State - 123456</p>
+                      <p className="text-muted">Your Business Address<br />City, State - 123456</p>
                     </div>
                   </div>
                 </div>
