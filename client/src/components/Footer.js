@@ -6,8 +6,8 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 mb-4">
-            <h5>
-              <img src="/Tiruchendur Murugan Images Hd 4k.jpeg" alt="Murugan" style={{height: '32px', width: '32px', objectFit: 'cover', marginRight: '8px', borderRadius: '50%'}} />
+            <h5 style={{display: 'flex', alignItems: 'center'}}>
+              <img src="/Thiruchendur Murugan Images Hd 4k.jpeg" alt="Murugan Icon" style={{height: '32px', width: '32px', objectFit: 'cover', borderRadius: '50%', marginRight: '8px'}} />
               Velmurugan Stone Crushers
             </h5>
             <p className="mb-3">
