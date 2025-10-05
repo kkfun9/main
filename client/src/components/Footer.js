@@ -15,18 +15,18 @@ const Footer = () => {
               We deliver excellence in every project with our premium products.
             </p>
             <div className="social-links">
-              <a href="#" aria-label="Facebook">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="#" aria-label="Twitter">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" aria-label="LinkedIn">
-                <i className="fab fa-linkedin"></i>
-              </a>
-              <a href="#" aria-label="Instagram">
-                <i className="fab fa-instagram"></i>
-              </a>
+                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i className="fab fa-facebook"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i className="fab fa-twitter"></i>
+                      </a>
+                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i className="fab fa-linkedin"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i className="fab fa-instagram"></i>
+                      </a>
             </div>
           </div>
           
