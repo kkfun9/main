@@ -10,7 +10,7 @@ const Hero = () => {
               Quality Aggregate Products for Construction
             </h1>
             <p className="lead mb-4">
-              VMBM provides high-quality construction aggregates including 20MM, 12MM, 40MM aggregates and M.Sand. 
+              Velmurugan Stone Crushers provides high-quality construction aggregates including 20MM, 12MM, 40MM aggregates and M.Sand. 
               Delivering excellence in every project.
             </p>
             <div className="row text-center mt-5">

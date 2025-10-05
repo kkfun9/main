@@ -6,7 +6,7 @@ const Header = ({ cartCount }) => {
       <div className="container">
         <a className="navbar-brand" href="#home">
           <i className="fas fa-building me-2"></i>
-          VMBM
+          Velmurugan Stone Crushers
         </a>
         
         <button 

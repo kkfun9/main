@@ -64,14 +64,14 @@ const ContactForm = () => {
                     <div className="text-center">
                       <i className="fas fa-phone fa-3x text-primary mb-3"></i>
                       <h5>Phone</h5>
-                      <p className="text-muted">+91 98765 43210</p>
+                      <p className="text-muted">+91 9959796665</p>
                     </div>
                   </div>
                   <div className="col-md-4 mb-4">
                     <div className="text-center">
                       <i className="fas fa-envelope fa-3x text-primary mb-3"></i>
                       <h5>Email</h5>
-                      <p className="text-muted">info@vmbm.com</p>
+                      <p className="text-muted">general.vmsc@gmail.com</p>
                     </div>
                   </div>
                   <div className="col-md-4 mb-4">

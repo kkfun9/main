@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="col-lg-4 mb-4">
             <h5>
               <i className="fas fa-building me-2"></i>
-              VMBM
+              Velmurugan Stone Crushers
             </h5>
             <p className="mb-3">
               Your trusted partner for high-quality construction aggregates. 
@@ -55,11 +55,11 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li className="mb-2">
                 <i className="fas fa-phone me-2"></i>
-                +91 98765 43210
+                +91 9959796665
               </li>
               <li className="mb-2">
                 <i className="fas fa-envelope me-2"></i>
-                info@vmbm.com
+                general.vmsc@gmail.com
               </li>
               <li className="mb-2">
                 <i className="fas fa-map-marker-alt me-2"></i>
@@ -74,7 +74,7 @@ const Footer = () => {
         <div className="row align-items-center">
           <div className="col-md-6">
             <p className="mb-0">
-              &copy; 2024 VMBM. All rights reserved.
+              &copy; 2024 Velmurugan Stone Crushers. All rights reserved.
             </p>
           </div>
           <div className="col-md-6 text-md-end">
