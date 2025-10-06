@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({ cartCount }) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: '#b8860b'}}>
       <div className="container">
         <a className="navbar-brand" href="#home" style={{display: 'flex', alignItems: 'center'}}>
           <img src="/Icon.png" alt="Company Icon" style={{height: '32px', width: '32px', objectFit: 'cover', borderRadius: '50%', marginRight: '8px'}} />

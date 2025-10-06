@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="hero-section" id="home">
+    <section className="hero-section" id="home" style={{background: 'linear-gradient(135deg, #ffd700 0%, #ff4500 100%)'}}>
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto text-center">
