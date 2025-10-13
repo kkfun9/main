@@ -1,3 +1,22 @@
+/* Make header transparent */
+.navbar.navbar-dark {
+  background-color: rgba(184, 134, 11, 0.7) !important;
+  backdrop-filter: blur(2px);
+}
+
+/* Make hero section and its content transparent */
+.hero-section {
+  background: rgba(255,255,255,0.1) !important;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+  backdrop-filter: blur(2px);
+}
+.hero-section .container, .hero-section .row, .hero-section .col-lg-8 {
+  background: rgba(255,255,255,0.2);
+  border-radius: 16px;
+  backdrop-filter: blur(2px);
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
