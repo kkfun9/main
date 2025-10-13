@@ -6,10 +6,28 @@ const Hero = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto text-center">
-            <h1 style={{fontSize: '62px', fontWeight: 'bold', lineHeight: 1.1, marginBottom: '0.5rem', fontFamily: 'inherit'}}>
+            <h1
+              style={{
+                fontFamily: 'Playfair Display, Georgia, serif',
+                fontSize: '62px',
+                fontWeight: 400,
+                lineHeight: '74.4px',
+                letterSpacing: 'normal',
+                color: 'inherit',
+                textAlign: 'center',
+                margin: 0,
+                boxSizing: 'border-box',
+                WebkitFontSmoothing: 'antialiased',
+                textShadow: 'none',
+                textTransform: 'none',
+                width: '100%',
+                maxWidth: '100%',
+                overflowWrap: 'break-word',
+                display: 'inline-block',
+              }}
+            >
               Crushing stone, building<br />dreams.
             </h1>
-            <h1 className="display-4 fw-bold mb-4" style={{marginTop: '0.5rem', fontSize: '2rem'}}>Our Products</h1>
             <p className="lead mb-4">High-quality construction aggregates for all your building needs</p>
             <div className="row justify-content-center">
               {/* Line 1: Stone Crusher */}
