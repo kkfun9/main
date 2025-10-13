@@ -6,7 +6,10 @@ const Hero = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto text-center">
-            <h1 className="display-4 fw-bold mb-4">Our Products</h1>
+            <div style={{fontSize: '3rem', fontWeight: 'bold', lineHeight: 1.1, marginBottom: '0.5rem'}}>
+              Crushing stone, building<br />dreams.
+            </div>
+            <h1 className="display-4 fw-bold mb-4" style={{marginTop: '0.5rem'}}>Our Products</h1>
             <p className="lead mb-4">High-quality construction aggregates for all your building needs</p>
             <div className="row justify-content-center">
               {/* Line 1: Stone Crusher */}
