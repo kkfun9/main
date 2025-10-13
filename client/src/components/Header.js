@@ -4,13 +4,10 @@ const Header = ({ cartCount }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: '#b8860b'}}>
       <div className="container">
-        <div className="navbar-brand" style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: 0}}>
-          <div style={{display: 'flex', alignItems: 'center'}}>
-            <img src="/Icon.png" alt="Company Icon" style={{height: '32px', width: '32px', objectFit: 'cover', borderRadius: '50%', marginRight: '8px'}} />
-            Velmurugan Stone Crushers
-          </div>
-          <span style={{fontSize: '0.95rem', color: '#fff', opacity: 0.85, marginLeft: '40px', marginTop: '-2px'}}>Crushing stone, building dreams.</span>
-        </div>
+        <a className="navbar-brand" href="#home" style={{display: 'flex', alignItems: 'center'}}>
+          <img src="/Icon.png" alt="Company Icon" style={{height: '32px', width: '32px', objectFit: 'cover', borderRadius: '50%', marginRight: '8px'}} />
+          Velmurugan Stone Crushers
+        </a>
         
         <button 
           className="navbar-toggler" 
