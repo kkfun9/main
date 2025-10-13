@@ -6,9 +6,9 @@ const Hero = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto text-center">
-            <div style={{fontSize: '3rem', fontWeight: 'bold', lineHeight: 1.1, marginBottom: '0.5rem'}}>
+            <h1 style={{fontSize: '62px', fontWeight: 'bold', lineHeight: 1.1, marginBottom: '0.5rem', fontFamily: 'inherit'}}>
               Crushing stone, building<br />dreams.
-            </div>
+            </h1>
             <h1 className="display-4 fw-bold mb-4" style={{marginTop: '0.5rem', fontSize: '2rem'}}>Our Products</h1>
             <p className="lead mb-4">High-quality construction aggregates for all your building needs</p>
             <div className="row justify-content-center">
