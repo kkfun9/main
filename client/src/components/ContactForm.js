@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import ChatWidget from './ChatWidget';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    message: ''
+    message: '',
+    signup: false
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState('');
@@ -14,7 +16,7 @@ const ContactForm = () => {
   const handleInputChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.type === 'checkbox' ? e.target.checked : e.target.value
     });
   };
 
@@ -24,7 +26,9 @@ const ContactForm = () => {
     setSubmitMessage('');
 
     try {
-      const response = await axios.post('/api/enquiry', formData);
+      // Include signup preference in enquiry payload
+      const payload = { ...formData };
+      const response = await axios.post('/api/enquiry', payload);
       
       if (response.data.success) {
         setSubmitMessage('Thank you for your enquiry! We will get back to you soon.');
@@ -139,6 +143,13 @@ const ContactForm = () => {
                     ></textarea>
                   </div>
 
+                  <div className="form-check mb-3">
+                    <input className="form-check-input" type="checkbox" id="signup" name="signup" checked={formData.signup} onChange={handleInputChange} />
+                    <label className="form-check-label" htmlFor="signup">
+                      Sign me up for email updates and offers
+                    </label>
+                  </div>
+
                   {submitMessage && (
                     <div className={`alert ${submitMessage.includes('Thank you') ? 'alert-success' : 'alert-danger'} mb-3`}>
                       {submitMessage}
@@ -170,6 +181,8 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+      {/* Chat widget included so users can start a live chat */}
+      <ChatWidget />
     </section>
   );
 };
