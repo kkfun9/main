@@ -1,132 +1,84 @@
-/* Make header transparent */
-.navbar.navbar-dark {
-  background-color: rgba(184, 134, 11, 0.7) !important;
-  backdrop-filter: blur(2px);
+:root{
+  --bg:#fefaf0;
+  --accent-1:#f59e0b; /* amber / yellow-ish */
+  --accent-2:#f97316; /* warm orange */
+  --accent-1-rgb:245,158,11;
+  --accent-2-rgb:249,115,22;
+  --muted:#6b7280;
+  --card:#ffffff;
 }
 
-/* Make hero section and its content transparent */
-.hero-section {
-  background: rgba(255,255,255,0.1) !important;
-  color: white;
-  padding: 80px 0;
-  text-align: center;
-  backdrop-filter: blur(2px);
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background-color: var(--bg);
+  color:#0f172a;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
 }
 
-/* Remove backgrounds from all planes except images */
-.container, .row, .col-lg-8, .col-12, .order-section, .contact-section, .product-card, .footer {
-  background: transparent !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  backdrop-filter: none !important;
+/* Navbar - clean white with subtle shadow */
+.site-navbar{
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(15,23,42,0.06);
+  padding: 0.6rem 0;
+}
+.navbar-brand{font-weight:600; font-size:1.15rem; color:var(--accent-1)!important}
+.navbar .nav-link{color:var(--muted); margin-left:0.5rem}
+.navbar .nav-link:hover{color:var(--accent-1)}
+
+/* Hero */
+.hero-section{
+  background: linear-gradient(135deg, rgba(var(--accent-1-rgb),0.95) 0%, rgba(var(--accent-2-rgb),0.95) 100%);
+  color: #fff;
+  padding: 96px 0;
+}
+.hero-inner{max-width:1100px; margin:0 auto; display:flex; gap:32px; align-items:center}
+.hero-copy{flex:1}
+.hero-eyebrow{font-weight:600; opacity:0.95; text-transform:uppercase; letter-spacing:1px}
+.hero-title{font-family: 'Merriweather', serif; font-size:48px; line-height:1.05; margin:0 0 16px}
+.hero-sub{font-size:18px; color:rgba(255,255,255,0.9); margin-bottom:24px}
+.hero-cta{display:flex; gap:12px}
+.btn-cta{background:#fff; color:var(--accent-1); border-radius:8px; padding:12px 20px; font-weight:600}
+.btn-ghost{background:transparent; border:1px solid rgba(255,255,255,0.18); color:#fff; border-radius:8px; padding:12px 20px}
+
+.hero-media{width:420px; flex-shrink:0}
+.hero-media img{width:100%; border-radius:12px; box-shadow:0 12px 36px rgba(2,6,23,0.24)}
+
+/* Cards / Products */
+.product-card{border-radius:12px; background:var(--card); box-shadow:0 8px 24px rgba(2,6,23,0.06); border:none}
+.product-image{height:160px; display:flex; align-items:center; justify-content:center}
+.price-tag{background:linear-gradient(90deg,var(--accent-1),var(--accent-2)); color:#fff; padding:6px 12px; border-radius:999px; font-weight:600}
+
+.order-section, .contact-section{padding:72px 0}
+.card.shadow{border-radius:12px}
+
+.form-control:focus{box-shadow:0 8px 24px rgba(var(--accent-1-rgb),0.12); border-color:var(--accent-1)}
+.btn-primary{background:linear-gradient(90deg,var(--accent-1),var(--accent-2)); border:none}
+.btn-primary:hover{filter:brightness(0.96)}
+
+.quantity-input{width:84px; text-align:center}
+
+.footer{background:#0b1220; color:rgba(255,255,255,0.85); padding:48px 0}
+.footer a{color:rgba(255,255,255,0.85)}
+.footer small{color:rgba(255,255,255,0.6)}
+
+@media (max-width: 991px){
+  .hero-inner{flex-direction:column; text-align:center}
+  .hero-media{width:100%}
+  .hero-title{font-size:34px}
 }
 
-/* Only product images retain their backgrounds (if any) */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f8f9fa;
-  background-image: url('../public/bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
+/* Ensure section headings remain readable over background image */
+#order .display-5,
+#contact .display-5 {
+  color: #ffffff; /* white for strong contrast */
+  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.navbar-brand {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.hero-section {
-  background: rgba(255,255,255,0.1);
-  color: white;
-  padding: 80px 0;
-  text-align: center;
-  backdrop-filter: blur(2px);
-}
-
-.product-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  background: rgba(255,255,255,0.2);
-  backdrop-filter: blur(2px);
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-}
-
-.product-image {
-  height: 200px;
-  object-fit: cover;
-  background-color: #f8f9fa;
-}
-
-.price-tag {
-  background: #28a745;
-  color: white;
-  padding: 5px 15px;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
- .order-section {
-   background-color: rgba(255,255,255,0.2);
-   padding: 60px 0;
-   backdrop-filter: blur(2px);
- }
-
-.contact-section {
-  background-color: #f8f9fa;
-  padding: 60px 0;
-}
-
-.form-control:focus {
-  border-color: #667eea;
-  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
-}
-
-.btn-primary {
-  background-color: #667eea;
-  border-color: #667eea;
-}
-
-.btn-primary:hover {
-  background-color: #5a6fd8;
-  border-color: #5a6fd8;
-}
-
-.quantity-input {
-  width: 80px;
-  text-align: center;
-}
-
-.footer {
-  background-color: #343a40;
-  color: white;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.social-links a {
-  color: white;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #667eea;
+/* Slightly lighten lead text in these sections for better hierarchy */
+#order .lead,
+#contact .lead {
+  color: rgba(255,255,255,0.92);
 }
